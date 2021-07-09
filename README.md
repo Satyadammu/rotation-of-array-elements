@@ -9,7 +9,7 @@ public class Rotation{
 
     Scanner sc=new Scanner(System.in);
 
-    int i,l1,r1,n;
+    int i,r1,l1,n;
 
     System.out.println("Enter l1 value:");
 
@@ -47,17 +47,17 @@ public class Rotation{
 
       {
 
-         if((i-l1)<0)
+         if((i-r1)<0)
 
          {
 
-            br[i]=ar[n+i-l1];
+            br[i]=ar[n+i-r1];
 
          }
 
          else 
 
-         br[i]=ar[i-l1];
+         br[i]=ar[i-r1];
 
       }
 
@@ -71,17 +71,17 @@ public class Rotation{
 
       {
 
-         if((i-r1)<0)
+         if((i-l1)<0)
 
          {
 
-            cr[n+i-r1]=br[i];
+            cr[n+i-l1]=br[i];
 
          }
 
          else 
 
-         cr[i-r1]=br[i];
+         cr[i-l1]=br[i];
 
       }
 
